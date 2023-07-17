@@ -1,0 +1,154 @@
+.container_cart {
+  margin-top: 260px;
+  height: auto;
+  margin-bottom: 40px;
+}
+.container_cart .table {
+  border: #e5e3e3;
+  border-top: 5px solid #b2252d;
+}
+.container_cart .table thead th {
+  padding: 10px;
+}
+.container_cart .table tbody .choosenQuantity .qty__selector-module-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_cart .table tbody .choosenQuantity .qty__selector-module-controls > * {
+  height: 28px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+}
+.container_cart .table tbody .choosenQuantity .qty__selector-module-controls > *:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.container_cart .table tbody .choosenQuantity .qty__selector-module-controls button {
+  width: 28px;
+  height: 28px;
+  font-size: 24px;
+  transition: all 0.1s ease-in-out;
+}
+.container_cart .table tbody .choosenQuantity .qty__selector-module-controls .qtySelector {
+  height: 28px;
+  width: 41px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: all 0.7s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.container_cart .table tbody .choosenQuantity .animate {
+  transform: rotate(360deg);
+  opacity: 1;
+}
+.container_cart .table tbody img {
+  width: 60px;
+  height: 60px;
+}
+.container_cart .table tbody td {
+  vertical-align: middle;
+  padding: 15px;
+}
+.container_cart .orderSummary {
+  background-color: #f9f9f9;
+}
+.container_cart .container_mobile .choosenQuantity .qty__selector-module-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_cart .container_mobile .choosenQuantity .qty__selector-module-controls > * {
+  height: 28px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+}
+.container_cart .container_mobile .choosenQuantity .qty__selector-module-controls > *:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.container_cart .container_mobile .choosenQuantity .qty__selector-module-controls button {
+  width: 28px;
+  height: 28px;
+  font-size: 24px;
+  transition: all 0.1s ease-in-out;
+}
+.container_cart .container_mobile .choosenQuantity .qty__selector-module-controls .qtySelector {
+  height: 28px;
+  width: 41px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: all 0.7s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.container_cart .container_mobile .choosenQuantity .animate {
+  transform: rotate(360deg);
+  opacity: 1;
+}
+
+@media (max-width: 1040px) {
+  .wrapMenu .hexbit-navbar {
+    min-height: 80px;
+    height: 100px;
+  }
+  .wrapMenu .hexbit-navbar .main-panel .infor1 i {
+    font-size: 30px;
+  }
+  .wrapMenu .hexbit-navbar .logo1 img {
+    width: 80px;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .container_cart {
+    margin-top: 120px;
+  }
+  .container_cart .container_mobile {
+    border: 1px solid #dcdbdb;
+  }
+  .container_cart .container_mobile .choosenQuantity .qty__selector-module-controls button {
+    width: 21px;
+    height: 18px;
+    font-size: 21px;
+  }
+  .container_cart .container_mobile .choosenQuantity .qty__selector-module-controls button .qtySelector {
+    height: 18px;
+  }
+  .container_cart .container_mobile .detail_mobile span,
+  .container_cart .container_mobile .detail_mobile p {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+  .container_cart .cart .orderSummary {
+    margin-left: 0 !important;
+  }
+  .footer {
+    padding: 20px 30px;
+  }
+  .footer .wrapFooter .logo {
+    text-align: center;
+  }
+  .footer .wrapFooter .contactUs,
+  .footer .wrapFooter .popular,
+  .footer .wrapFooter .information,
+  .footer .wrapFooter .connectUs {
+    margin-bottom: 30px;
+  }
+  .footer .wrapFooter .contactUs a,
+  .footer .wrapFooter .popular a,
+  .footer .wrapFooter .information a,
+  .footer .wrapFooter .connectUs a {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=cart.css.map */

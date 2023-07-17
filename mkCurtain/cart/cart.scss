@@ -1,0 +1,190 @@
+$menu-height: 260px;
+//cart
+.container_cart {
+  margin-top: $menu-height;
+  height: auto;
+  margin-bottom: 40px;
+  .table {
+    border: #e5e3e3;
+    border-top: 5px solid #b2252d;
+    thead {
+      th {
+        padding: 10px;
+      }
+    }
+    tbody {
+      .choosenQuantity {
+        .qty {
+          &__selector {
+            &-module {
+              &-controls {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                > * {
+                  height: 28px;
+                  font-size: 16px;
+                  line-height: 16px;
+                  border: 0;
+                  outline: none;
+                  border-radius: 0;
+                  &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                  }
+                }
+                button {
+                  width: 28px;
+                  height: 28px;
+                  font-size: 24px;
+                  transition: all 0.1s ease-in-out;
+                }
+                .qtySelector {
+                  height: 28px;
+                  width: 41px;
+                  text-align: center;
+                  font-size: 16px;
+                  opacity: 0.7;
+                  transition: all 0.7s ease-in-out;
+                  user-select: none;
+                }
+              }
+            }
+          }
+        }
+
+        .animate {
+          transform: rotate(360deg);
+          opacity: 1;
+        }
+      }
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      td {
+        vertical-align: middle;
+        padding: 15px;
+      }
+    }
+  }
+  .orderSummary {
+    background-color: #f9f9f9;
+  }
+  .container_mobile {
+    .choosenQuantity {
+      .qty {
+        &__selector {
+          &-module {
+            &-controls {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              > * {
+                height: 28px;
+                font-size: 16px;
+                line-height: 16px;
+                border: 0;
+                outline: none;
+                border-radius: 0;
+                &:hover {
+                  cursor: pointer;
+                  transform: scale(1.1);
+                }
+              }
+              button {
+                width: 28px;
+                height: 28px;
+                font-size: 24px;
+                transition: all 0.1s ease-in-out;
+              }
+              .qtySelector {
+                height: 28px;
+                width: 41px;
+                text-align: center;
+                font-size: 16px;
+                opacity: 0.7;
+                transition: all 0.7s ease-in-out;
+                user-select: none;
+              }
+            }
+          }
+        }
+      }
+
+      .animate {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .wrapMenu {
+    .hexbit-navbar {
+      min-height: 80px;
+      height: 100px;
+      .main-panel {
+        .infor1 {
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+      .logo1 {
+        img {
+          width: 80px;
+          height: 30px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .container_cart {
+    margin-top: 120px;
+    .container_mobile {
+      border: 1px solid #dcdbdb;
+      .choosenQuantity {
+        .qty__selector-module-controls {
+          button {
+            .qtySelector {
+              height: 18px;
+            }
+            width: 21px;
+            height: 18px;
+            font-size: 21px;
+          }
+        }
+      }
+      .detail_mobile {
+        span,
+        p {
+          font-size: 12px;
+          margin-bottom: 7px;
+        }
+      }
+    }
+    .cart {
+      .orderSummary {
+        margin-left: 0 !important;
+      }
+    }
+  }
+  .footer {
+    padding: 20px 30px;
+    .wrapFooter {
+      .logo {
+        text-align: center;
+      }
+      .contactUs,
+      .popular,
+      .information,
+      .connectUs {
+        margin-bottom: 30px;
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
