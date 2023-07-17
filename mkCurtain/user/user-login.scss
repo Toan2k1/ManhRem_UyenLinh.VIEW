@@ -1,0 +1,44 @@
+//login :))
+.login {
+  margin-top: 280px;
+}
+//responsive
+@media (max-width: 1040px) {
+  .wrapMenu {
+    .hexbit-navbar {
+      min-height: 80px;
+      height: 100px;
+      .main-panel {
+        .infor1 {
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+      .logo1 {
+        img {
+          width: 80px;
+          height: 30px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 20px 30px;
+    .wrapFooter {
+      .logo {
+        text-align: center;
+      }
+      .contactUs,
+      .popular,
+      .information,
+      .connectUs {
+        margin-bottom: 30px;
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

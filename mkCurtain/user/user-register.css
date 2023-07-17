@@ -1,0 +1,36 @@
+.register {
+  margin-top: 260px;
+}
+
+@media (max-width: 1040px) {
+  .wrapMenu .hexbit-navbar {
+    min-height: 80px;
+    height: 100px;
+  }
+  .wrapMenu .hexbit-navbar .main-panel .infor1 i {
+    font-size: 30px;
+  }
+  .wrapMenu .hexbit-navbar .logo1 img {
+    width: 80px;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .footer {
+    padding: 20px 30px;
+  }
+  .footer .wrapFooter .logo {
+    text-align: center;
+  }
+  .footer .wrapFooter .contactUs,
+  .footer .wrapFooter .popular,
+  .footer .wrapFooter .information,
+  .footer .wrapFooter .connectUs {
+    margin-bottom: 30px;
+  }
+  .footer .wrapFooter .contactUs a,
+  .footer .wrapFooter .popular a,
+  .footer .wrapFooter .information a,
+  .footer .wrapFooter .connectUs a {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=user-register.css.map */
