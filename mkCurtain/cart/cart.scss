@@ -1,4 +1,22 @@
 $menu-height: 260px;
+// Import Google Font
+
+// Brand colors
+$primary: #ffffff;
+$secondary: #4dc0e3;
+
+// Standard colors
+$black: #000;
+$white: #ffffff;
+$red: #cc0000;
+
+// Mixin to generate hover & active states
+@mixin hover-active() {
+  &:active,
+  &:hover {
+    @content;
+  }
+}
 //cart
 .container_cart {
   margin-top: $menu-height;
