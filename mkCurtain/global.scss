@@ -12,7 +12,7 @@
 ul {
   list-style: none;
 }
-$menu-height: 260px;
+$menu-height: 130px;
 $navbar-height: 130px;
 $navbar-drawer-width: 300px;
 $navbar-megamenu-width: 60;
@@ -101,7 +101,7 @@ body.show-sidebar-cart {
     visibility: visible;
   }
 }
-
+//sidebarCart
 #sidebar-cart {
   background: $primary;
   position: fixed;
@@ -114,7 +114,7 @@ body.show-sidebar-cart {
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1);
   transition: right 0.5s ease-in-out;
   .container {
-    // position: relative;
+    position: relative;
     height: 94vh;
     .product {
       padding: 15px;
@@ -133,10 +133,10 @@ body.show-sidebar-cart {
       }
     }
     .totalmoney {
-      // position: absolute;
-      // right: 0;
-      // left: 0;
-      // bottom: 0;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
       padding: 15px;
     }
   }
@@ -190,6 +190,7 @@ body.show-sidebar-cart {
     justify-content: center;
   }
 }
+//menu
 .wrapMenu {
   .hexbit-navbar {
     height: $navbar-height;
@@ -589,6 +590,7 @@ body.show-sidebar-cart {
     direction: ltr;
   }
 }
+//footer
 .footer {
   width: 100%;
   height: 551px;
@@ -661,6 +663,7 @@ body.show-sidebar-cart {
     }
   }
 }
+//responsive
 @media (max-width: $navbar-mobile-view-breakpoint) {
   .main-panel {
     .infor1 {
@@ -778,6 +781,7 @@ body.show-sidebar-cart {
     }
   }
 }
+//responsive
 @media (max-width: 1040px) {
   .wrapMenu {
     .hexbit-navbar {
@@ -817,6 +821,7 @@ body.show-sidebar-cart {
     }
   }
 }
+//responsive
 @media screen and (max-width: 800px) {
   #sidebar-cart {
     .container {

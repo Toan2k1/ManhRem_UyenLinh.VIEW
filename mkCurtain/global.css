@@ -35,6 +35,7 @@ body.show-sidebar-cart #sidebar-cart {
   transition: right 0.5s ease-in-out;
 }
 #sidebar-cart .container {
+  position: relative;
   height: 94vh;
 }
 #sidebar-cart .container .product {
@@ -52,6 +53,10 @@ body.show-sidebar-cart #sidebar-cart {
   color: #c7c7cc;
 }
 #sidebar-cart .container .totalmoney {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
   padding: 15px;
 }
 #sidebar-cart .title-cart-sidebar {
