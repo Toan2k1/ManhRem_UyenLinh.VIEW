@@ -34,22 +34,25 @@ body.show-sidebar-cart #sidebar-cart {
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1);
   transition: right 0.5s ease-in-out;
 }
-#sidebar-cart .allProduct {
-  height: 530px;
+#sidebar-cart .container {
+  height: 94vh;
 }
-#sidebar-cart .allProduct .product {
+#sidebar-cart .container .product {
   padding: 15px;
 }
-#sidebar-cart .allProduct .product .name-product p {
+#sidebar-cart .container .product .name-product p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 15px;
   margin-bottom: 0;
 }
-#sidebar-cart .allProduct .product .name-product span {
+#sidebar-cart .container .product .name-product span {
   font-size: 13px;
   color: #c7c7cc;
+}
+#sidebar-cart .container .totalmoney {
+  padding: 15px;
 }
 #sidebar-cart .title-cart-sidebar {
   display: flex;
@@ -658,8 +661,5 @@ body.show-sidebar-cart #sidebar-cart {
   .footer .wrapFooter .information a,
   .footer .wrapFooter .connectUs a {
     font-size: 16px;
-  }
-  #sidebar-cart .allProduct {
-    height: 470px;
   }
 }/*# sourceMappingURL=global.css.map */
