@@ -12,7 +12,7 @@
 ul {
   list-style: none;
 }
-$menu-height: 260px;
+$menu-height: 130px;
 $navbar-height: 130px;
 $navbar-drawer-width: 300px;
 $navbar-megamenu-width: 60;
@@ -114,7 +114,7 @@ body.show-sidebar-cart {
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1);
   transition: right 0.5s ease-in-out;
   .container {
-    // position: relative;
+    position: relative;
     height: 94vh;
     .product {
       padding: 15px;
@@ -133,10 +133,10 @@ body.show-sidebar-cart {
       }
     }
     .totalmoney {
-      // position: absolute;
-      // right: 0;
-      // left: 0;
-      // bottom: 0;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
       padding: 15px;
     }
   }
