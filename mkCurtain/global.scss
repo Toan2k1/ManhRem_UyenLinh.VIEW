@@ -113,8 +113,9 @@ body.show-sidebar-cart {
   right: -340px;
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1);
   transition: right 0.5s ease-in-out;
-  .allProduct {
-    height: 530px;
+  .container {
+    // position: relative;
+    height: 94vh;
     .product {
       padding: 15px;
       .name-product {
@@ -130,6 +131,13 @@ body.show-sidebar-cart {
           color: #c7c7cc;
         }
       }
+    }
+    .totalmoney {
+      // position: absolute;
+      // right: 0;
+      // left: 0;
+      // bottom: 0;
+      padding: 15px;
     }
   }
 
@@ -808,9 +816,11 @@ body.show-sidebar-cart {
       }
     }
   }
+}
+@media screen and (max-width: 800px) {
   #sidebar-cart {
-    .allProduct {
-      height: 470px;
+    .container {
+      // height: 610px;
     }
   }
 }
