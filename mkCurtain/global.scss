@@ -12,7 +12,7 @@
 ul {
   list-style: none;
 }
-$menu-height: 130px;
+$menu-height: 0px;
 $navbar-height: 130px;
 $navbar-drawer-width: 300px;
 $navbar-megamenu-width: 60;
@@ -92,25 +92,27 @@ $secondary: #4dc0e3;
     @content;
   }
 }
-body.show-sidebar-cart {
-  overflow: hidden !important;
-  height: 100% !important;
+// body.show-sidebar-cart {
+//   overflow: hidden !important;
+//   height: 100% !important;
 
-  #sidebar-cart {
-    right: 0;
-    visibility: visible;
-  }
-}
+//   #sidebar-cart {
+//     right: 0;
+//     visibility: visible;
+//   }
+// }
 //sidebarCart
 #sidebar-cart {
   background: $primary;
   position: fixed;
-  display: block;
+  display: none;
   width: 320px;
   height: 100vh;
   z-index: 2000;
   top: 0;
-  right: -340px;
+  right: 0;
+  animation: sidebar 0.4s ease-in;
+  // right: -340px;
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1);
   transition: right 0.5s ease-in-out;
   .container {
@@ -827,5 +829,13 @@ body.show-sidebar-cart {
     .container {
       // height: 610px;
     }
+  }
+}
+@keyframes sidebar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

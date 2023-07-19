@@ -94,59 +94,64 @@
         <!-- dim effect -->
         <div class="screen-dim"></div>
       </div>
-    </header>
-    <!--sidebar-->
-    <aside id="sidebar-cart">
-      <main>
-        <div class="title-cart-sidebar">
-          <a href="#" class="close-button"><span class="close-icon">X</span></a>
-          <h2>Shopping Cart</h2>
-        </div>
-        <div class="container">
-          <div class="product row">
-            <div class="col-4">
-              <img
-                class="img-fluid"
-                src="../customMadeCurtains/image/ip1.jpg"
-                alt=""
-              />
-            </div>
-            <div class="col-7 name-product">
-              <p>M Mogan French Pleat Custom Made Curtain</p>
-              <span>1 * MYR375.20</span>
-            </div>
-            <div class="col-1">
-              <button type="button" class="btn p-0">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
+      <!--sidebar-->
+      <aside id="sidebar-cart">
+        <main>
+          <div class="title-cart-sidebar">
+            <a href="#" class="close-button"
+              ><span onclick="close()" class="close-icon">X</span></a
+            >
+            <h2>Shopping Cart</h2>
           </div>
+          <div class="container">
+            <div class="product row">
+              <div class="col-4">
+                <img
+                  class="img-fluid"
+                  src="../customMadeCurtains/image/ip1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-7 name-product">
+                <p>M Mogan French Pleat Custom Made Curtain</p>
+                <span>1 * MYR375.20</span>
+              </div>
+              <div class="col-1">
+                <button type="button" class="btn p-0">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
 
-          <div class="totalmoney">
-            <hr />
-            <ul class="d-flex justify-content-between align-items-center ps-0">
-              <h4>Subtotal</h4>
-              <span>MYR391.20</span>
-            </ul>
-            <div class="button row">
-              <div class="col-6">
-                <button
-                  type="button"
-                  class="btn btn-danger w-100 rounded-0 bg-white text-danger"
-                >
-                  VIEW CART
-                </button>
-              </div>
-              <div class="col-6">
-                <button type="button" class="btn btn-danger w-100 rounded-0">
-                  CHECKOUT
-                </button>
+            <div class="totalmoney">
+              <hr />
+              <ul
+                class="d-flex justify-content-between align-items-center ps-0"
+              >
+                <h4>Subtotal</h4>
+                <span>MYR391.20</span>
+              </ul>
+              <div class="button row">
+                <div class="col-6">
+                  <button
+                    type="button"
+                    class="btn btn-danger w-100 rounded-0 bg-white text-danger"
+                  >
+                    VIEW CART
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-danger w-100 rounded-0">
+                    CHECKOUT
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </main>
-    </aside>
+        </main>
+      </aside>
+    </header>
+
     <!--Register-->
     <section class="register container">
       <div class="row">
@@ -162,7 +167,6 @@
                 <input
                   type="email"
                   class="rounded-0 form-control"
-                  id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
               </div>
@@ -170,11 +174,7 @@
                 <label for="exampleInputPassword1" class="form-label"
                   >Last Name</label
                 >
-                <input
-                  type="password"
-                  class="rounded-0 form-control"
-                  id="exampleInputPassword1"
-                />
+                <input type="password" class="rounded-0 form-control" />
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label"
@@ -183,7 +183,6 @@
                 <input
                   type="email"
                   class="rounded-0 form-control"
-                  id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
               </div>
@@ -191,11 +190,7 @@
                 <label for="exampleInputPassword1" class="form-label"
                   >Email</label
                 >
-                <input
-                  type="password"
-                  class="rounded-0 form-control"
-                  id="exampleInputPassword1"
-                />
+                <input type="password" class="rounded-0 form-control" />
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label"
@@ -204,7 +199,6 @@
                 <input
                   type="email"
                   class="rounded-0 form-control"
-                  id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
               </div>
@@ -212,11 +206,7 @@
                 <label for="exampleInputPassword1" class="form-label"
                   >Confirm Password</label
                 >
-                <input
-                  type="password"
-                  class="rounded-0 form-control"
-                  id="exampleInputPassword1"
-                />
+                <input type="password" class="rounded-0 form-control" />
               </div>
               <div class="mb-3 form-check">
                 <div>
@@ -449,25 +439,12 @@
     </script>
     <!--js-sidebar-->
     <script type="text/javascript">
-      $(document).ready(function ($) {
-        // Declare the body variable
-        var $body = $("body");
-
-        // Function that shows and hides the sidebar cart
-        $(".cart-button, .close-button").click(function (e) {
-          e.preventDefault();
-
-          // Add the show-sidebar-cart class to the body tag
-          $body.toggleClass("show-sidebar-cart");
-
-          // Check if the sidebar curtain is visible
-          if ($("#sidebar-cart-curtain").is(":visible")) {
-            // Hide the curtain
-            $("#sidebar-cart-curtain").fadeOut(500);
-          } else {
-            // Show the curtain
-            $("#sidebar-cart-curtain").fadeIn(500);
-          }
+      $(document).ready(function () {
+        $(".close-button").click(function () {
+          document.getElementById("sidebar-cart").style.display = "none";
+        });
+        $(".cart-button").click(function () {
+          document.getElementById("sidebar-cart").style.display = "block";
         });
       });
     </script>

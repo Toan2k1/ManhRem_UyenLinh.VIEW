@@ -13,24 +13,16 @@ ul {
   list-style: none;
 }
 
-body.show-sidebar-cart {
-  overflow: hidden !important;
-  height: 100% !important;
-}
-body.show-sidebar-cart #sidebar-cart {
-  right: 0;
-  visibility: visible;
-}
-
 #sidebar-cart {
   background: #ffffff;
   position: fixed;
-  display: block;
+  display: none;
   width: 320px;
   height: 100vh;
   z-index: 2000;
   top: 0;
-  right: -340px;
+  right: 0;
+  animation: sidebar 0.4s ease-in;
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1);
   transition: right 0.5s ease-in-out;
 }
@@ -666,5 +658,13 @@ body.show-sidebar-cart #sidebar-cart {
   .footer .wrapFooter .information a,
   .footer .wrapFooter .connectUs a {
     font-size: 16px;
+  }
+}
+@keyframes sidebar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }/*# sourceMappingURL=global.css.map */

@@ -523,27 +523,12 @@ var qtySelector = {
     </script>
     <!--js-sidebar-->
     <script type="text/javascript">
-      $(document).ready(function ($) {
-        // Declare the body variable
-        var $body = $("body");
-
-        // Function that shows and hides the sidebar cart
-        $(".cart-button, .close-button").click(function (
-          e
-        ) {
-          e.preventDefault();
-
-          // Add the show-sidebar-cart class to the body tag
-          $body.toggleClass("show-sidebar-cart");
-
-          // Check if the sidebar curtain is visible
-          if ($("#sidebar-cart-curtain").is(":visible")) {
-            // Hide the curtain
-            $("#sidebar-cart-curtain").fadeOut(500);
-          } else {
-            // Show the curtain
-            $("#sidebar-cart-curtain").fadeIn(500);
-          }
+      $(document).ready(function () {
+        $(".close-button").click(function () {
+          document.getElementById("sidebar-cart").style.display = "none";
+        });
+        $(".cart-button").click(function () {
+          document.getElementById("sidebar-cart").style.display = "block";
         });
       });
     </script>
